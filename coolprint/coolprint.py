@@ -15,3 +15,20 @@ def coolprint(input, timespan=0.05):
 		print(i, flush=True, end="")
 		time.sleep(timespan)
 	print("\n", flush=True, end="")
+
+
+def dullprint(input):
+	print(input)
+
+
+def starprint(input):
+	print("*"*len(input))
+
+def coolstarprint(input, timespan=0.05):
+	if type(timespan) is not type(float()):
+		raise NotAFloatError(timespan)
+	
+	for i in range(0, len(input)):
+		print("*", flush=True, end="")
+		time.sleep(timespan)
+	print("\n", flush=True, end="")

@@ -1,1 +1,1 @@
-from .coolprint import coolprint
+from .coolprint import coolprint, dullprint, starprint, coolstarprint
